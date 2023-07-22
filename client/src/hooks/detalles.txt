@@ -1,0 +1,27 @@
+// TODO: Aqui va los hooks que se van a usar en la aplicacion
+
+En la carpeta "hooks" de un proyecto de React, generalmente se colocan los "custom hooks". Los "custom hooks" son funciones personalizadas que te permiten reutilizar lógica entre componentes. Estos hooks pueden encapsular comportamientos complejos o comunes, y proporcionan una forma elegante de compartir la lógica entre diferentes partes de la aplicación.
+
+A continuación, te explico qué tipo de lógica o funcionalidades podrían incluirse en la carpeta "hooks" de un proyecto de red social en React:
+
+1. **Autenticación**:
+   Un hook de autenticación podría encapsular la lógica para manejar el inicio de sesión, registro, cierre de sesión y el manejo del estado de autenticación en la aplicación.
+
+2. **Manejo de Datos**:
+   Un hook de manejo de datos podría abstraer la lógica para obtener y manipular datos de la API o de una base de datos, proporcionando funciones que faciliten la obtención y actualización de datos para diferentes partes de la aplicación.
+
+3. **Manejo del Estado**:
+   Un hook de manejo del estado podría encapsular la lógica para manejar el estado global de la aplicación utilizando `useState` o `useReducer`, facilitando así el acceso y la actualización del estado desde diferentes componentes.
+
+4. **Manejo de Formularios**:
+   Un hook de manejo de formularios podría abstraer la lógica para manejar los datos de formularios, validación y envío, simplificando así el código en los componentes de formularios.
+
+5. **Manejo de Temas**:
+   Un hook de manejo de temas podría permitir cambiar el tema o el estilo de la aplicación de forma dinámica, aplicando los estilos adecuados a través del contexto o variables globales.
+
+6. **Manejo de Interacciones del Usuario**:
+   Un hook de manejo de interacciones del usuario podría encapsular la lógica para manejar eventos específicos, como desplazamientos, clics, movimientos del mouse, etc., para facilitar el manejo de interacciones complejas.
+
+La idea es que cada hook encapsule una funcionalidad específica y sea independiente, lo que permitirá que puedas reutilizarlo en diferentes partes de tu aplicación. Al colocar estos hooks en una carpeta "hooks", mantienes el código organizado y fácil de mantener, ya que todos los hooks están centralizados en un solo lugar y se pueden importar según sea necesario en diferentes componentes.
+
+La carpeta "hooks" es especialmente útil para compartir lógica entre componentes funcionales, lo que fomenta una arquitectura más modular y mantenible para tu proyecto de React.

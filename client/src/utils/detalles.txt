@@ -1,0 +1,69 @@
+// TODO: leer
+
+En la carpeta "utils" de un proyecto de React, generalmente se colocan funciones de utilidad que son compartidas entre diferentes partes de la aplicación. Estas funciones pueden ser pequeñas utilidades que se utilizan para realizar tareas comunes o ayudar a mantener el código limpio y organizado.
+
+En un proyecto de red social en React, la carpeta "utils" podría contener las siguientes funciones de utilidad:
+
+1. **Formateo de Fechas**:
+   Una función que toma una fecha en formato de tiempo UNIX y la convierte en un formato legible para mostrar en la interfaz de usuario.
+
+   ```javascript
+   // src/utils/dateUtils.js
+
+   export function formatDate(timestamp) {
+     const date = new Date(timestamp);
+     const options = { year: 'numeric', month: 'long', day: 'numeric' };
+     return date.toLocaleDateString(undefined, options);
+   }
+   ```
+
+2. **Capitalización de Texto**:
+   Una función que toma un texto y devuelve el mismo texto con la primera letra de cada palabra en mayúscula.
+
+   ```javascript
+   // src/utils/textUtils.js
+
+   export function capitalizeText(text) {
+     return text.replace(/\b\w/g, (char) => char.toUpperCase());
+   }
+   ```
+
+3. **Validación de Formularios**:
+   Una función que realiza la validación de datos en formularios antes de enviarlos al servidor.
+
+   ```javascript
+   // src/utils/formValidation.js
+
+   export function validateForm(formData) {
+     const errors = {};
+
+     if (!formData.name) {
+       errors.name = 'El nombre es obligatorio';
+     }
+
+     // Más validaciones según los campos del formulario
+
+     return errors;
+   }
+   ```
+
+4. **Manejo de Tokens de Autenticación**:
+   Funciones para almacenar, recuperar y eliminar el token de autenticación en el almacenamiento local del navegador.
+
+   ```javascript
+   // src/utils/authUtils.js
+
+   export function saveAuthToken(token) {
+     localStorage.setItem('authToken', token);
+   }
+
+   export function getAuthToken() {
+     return localStorage.getItem('authToken');
+   }
+
+   export function removeAuthToken() {
+     localStorage.removeItem('authToken');
+   }
+   ```
+
+Estas son solo algunas ejemplos de funciones de utilidad que podrían estar en la carpeta "utils" de un proyecto de red social en React. La idea es que estas funciones sean independientes y puedan ser reutilizadas en diferentes partes de la aplicación donde sean necesarias. Al colocar estas funciones en una carpeta "utils", mantienes el código organizado y fácil de mantener, ya que todas las funciones de utilidad están centralizadas en un solo lugar y se pueden importar según sea necesario en otros componentes.

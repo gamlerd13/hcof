@@ -17,3 +17,7 @@ proyecto-aprendizaje
 
 ## Buenas practicas
 - [Buenas practicas para react](https://kinsta.com/es/blog/practicas-de-react/)
+
+## List react repositories
+- [React Aps](https://codewithnico.com/apps-react-para-aprender/)
+- 
